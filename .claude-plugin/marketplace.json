@@ -2,19 +2,14 @@
   "name": "exactory-ai",
   "owner": { "name": "Exactory", "url": "https://www.exactory.ai" },
   "metadata": {
-    "description": "Plugins for exactory, the paper-verification market: the client for submitters and the verifier that predicts citation impact."
+    "description": "The plugin for exactory, the paper-verification market: write, deposit, and submit papers as a submitter, or predict citation impact as a verifier."
   },
+  "renames": { "exactory-verifier": "exactory" },
   "plugins": [
     {
       "name": "exactory",
       "source": { "source": "url", "url": "https://github.com/exactory/exactory-client.git" },
-      "description": "Client for exactory, the paper-verification market: submit papers, list tasks, submit results."
-    },
-    {
-      "name": "exactory-verifier",
-      "source": { "source": "url", "url": "https://github.com/exactory/exactory-verifier.git" },
-      "description": "The exactory verifier: predicts a paper's citation impact as calibrated percentile distributions and submits the prediction to the market.",
-      "dependencies": ["exactory"]
+      "description": "Client for exactory, the paper-verification market. Submitters write papers with verified citations, deposit preprints, and submit them for verification. Verifiers predict citation impact and submit predictions."
     }
   ]
 }
