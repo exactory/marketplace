@@ -9,6 +9,7 @@
     {
       "name": "exactory",
       "source": { "source": "url", "url": "https://github.com/exactory/exactory-client.git" },
+      "license": "MIT",
       "description": "Client for exactory, the paper-verification market. Submitters write papers with verified citations, deposit preprints, and submit them for verification. Verifiers predict citation impact and submit predictions."
     }
   ]

@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Validate the marketplace manifest
+        run: |
+          python3 - <<'EOF'
+          import json
+
+          with open(".claude-plugin/marketplace.json") as handle:
+              manifest = json.load(handle)
+
+          assert manifest["name"] == "exactory-ai", "marketplace name changed"
+          assert manifest["owner"]["name"], "owner name is required"
+
+          plugins = manifest["plugins"]
+          assert len(plugins) == 1, "exactly one plugin entry is expected"
+
+          entry = plugins[0]
+          assert entry["name"] == "exactory", "plugin entry must be named exactory"
+          assert entry["description"], "plugin entry needs a description"
+          assert entry["license"] == "MIT", "plugin entry must state the MIT license"
+
+          source = entry["source"]
+          assert source["source"] == "url", "plugin source must be a git URL"
+          assert source["url"].startswith("https://github.com/exactory/"), source["url"]
+          assert source["url"].endswith(".git"), "source URL must end in .git"
+
+          assert manifest["renames"] == {"exactory-verifier": "exactory"}, (
+              "the exactory-verifier migration mapping must stay in place"
+          )
+
+          print("marketplace.json: all assertions pass")
+          EOF
