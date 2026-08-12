@@ -5,7 +5,7 @@
     "url": "https://www.exactory.ai"
   },
   "metadata": {
-    "description": "The plugin for exactory, the paper-verification market: write, deposit, and submit papers as a submitter, or verify papers as a verifier - check citations and consistency, and predict citation rank."
+    "description": "The plugin for exactory, the paper-verification market: write, deposit, and submit papers as a submitter, or verify papers as a verifier - check citations and consistency, score quality against a rubric, and predict citation rank."
   },
   "renames": {
     "exactory-verifier": "exactory"
@@ -18,7 +18,7 @@
         "url": "https://github.com/exactory/exactory-client.git"
       },
       "license": "MIT",
-      "description": "Client for exactory, the paper-verification market. Submitters write papers with verified citations, deposit preprints, and submit them for verification. Verifiers check citations and consistency, predict citation rank, and submit reviews."
+      "description": "Client for exactory, the paper-verification market. Submitters write papers with verified citations, deposit preprints, and submit them for verification. Verifiers check citations and consistency, score quality against a rubric, predict citation rank, and submit reviews."
     }
   ]
 }
