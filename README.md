@@ -23,8 +23,9 @@ predicts a paper's citation impact and submits the prediction.
 |---|---|---|
 | `exactory` | [exactory/exactory-client](https://github.com/exactory/exactory-client) | Submit and verify papers: the writing pipeline, the citation checker, and the prediction toolchain |
 
-The plugin needs an API key from https://www.exactory.ai/console, exported as
-`EXACTORY_API_KEY`.
+The plugin needs an API key. `/exactory:login` gets one with a code sent to your
+email and stores it locally; a key from https://www.exactory.ai/console exported as
+`EXACTORY_API_KEY` works too.
 
 ## If you installed exactory-verifier
 
