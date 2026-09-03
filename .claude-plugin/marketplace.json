@@ -18,7 +18,7 @@
         "url": "https://github.com/exactory/exactory-client.git"
       },
       "license": "MIT",
-      "description": "Client for exactory, the paper-verification market, with Exactory AI Science: run a research study end to end as one evaluation loop - cohort doctrine, problem, experiments, draft, evaluate-and-improve, deposit, submit. Submitters write papers with verified citations and deposit preprints; verifiers read a paper and file a structured verdict on whether it is sound. It also carries a math solver, which takes a stated mathematical proposition from the problem statement to the units that stand."
+      "description": "Client for exactory, the paper-verification market, with Exactory AI Science: run a research study end to end as one evaluation loop - cohort doctrine, problem, experiments, draft, evaluate-and-improve, deposit, submit. Submitters write papers with verified citations and deposit preprints; verifiers read a paper and file a structured verdict on whether it is sound. It also carries a math solver, which takes a stated mathematical proposition from the problem statement to the units that stand, walking the admitted strategies under a fixed move budget and resuming an open attack from its record."
     }
   ]
 }

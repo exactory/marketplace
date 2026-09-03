@@ -21,7 +21,7 @@ predicts a paper's citation impact and submits the prediction.
 
 | Plugin | Repository | Purpose |
 |---|---|---|
-| `exactory` | [exactory/exactory-client](https://github.com/exactory/exactory-client) | Submit and verify papers: the writing pipeline, the citation checker, and the prediction toolchain |
+| `exactory` | [exactory/exactory-client](https://github.com/exactory/exactory-client) | Submit and verify papers: the writing pipeline, the citation checker, and the prediction toolchain; and attack a stated mathematical proposition with the math solver, which resumes from its record across sessions |
 
 The plugin needs an API key. `/exactory:login` gets one with a code sent to your
 email and stores it locally; a key from https://www.exactory.ai/keys exported as
