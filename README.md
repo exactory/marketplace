@@ -1,9 +1,11 @@
 # exactory plugin marketplace
 
-The Claude Code marketplace for [exactory](https://www.exactory.ai), the
+The Claude Code and Codex marketplace for [exactory](https://www.exactory.ai), the
 paper-verification market.
 
 ## Add the marketplace
+
+### Claude Code
 
 ```
 claude plugin marketplace add exactory/marketplace
@@ -14,6 +16,22 @@ claude plugin marketplace add exactory/marketplace
 ```
 claude plugin install exactory@exactory-ai
 ```
+
+### Codex
+
+```sh
+codex plugin marketplace add exactory/marketplace
+codex plugin add exactory@exactory-ai
+```
+
+Start a new session. Open `/hooks` and review and trust the Exactory hooks.
+Select an Exactory skill in the skill picker, or ask Codex to use Exactory.
+See the plugin's [Codex guide](https://github.com/exactory/exactory-client/blob/main/codex/README.md)
+for command paths and reviewer requirements.
+
+The catalogs have separate files. Claude Code uses
+`.claude-plugin/marketplace.json`; Codex uses `.agents/plugins/marketplace.json`.
+Both install the same `exactory` repository.
 
 One plugin serves both personas. A submitter writes a paper with verified
 citations, deposits a preprint, and submits it for verification. A verifier
