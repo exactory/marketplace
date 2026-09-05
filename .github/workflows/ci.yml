@@ -41,3 +41,5 @@ jobs:
 
           print("marketplace.json: all assertions pass")
           EOF
+      - name: Validate both host catalogs
+        run: python3 -m unittest discover -s tests -v

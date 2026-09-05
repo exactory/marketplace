@@ -1,0 +1,20 @@
+{
+  "name": "exactory-ai",
+  "interface": {
+    "displayName": "Exactory"
+  },
+  "plugins": [
+    {
+      "name": "exactory",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/exactory/exactory-client.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
